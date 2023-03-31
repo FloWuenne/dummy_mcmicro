@@ -1,0 +1,4 @@
+Error response from daemon: Cannot kill container: nxf-gYe6dHuEiiANLSqMsJCpaEGF: No such container: nxf-gYe6dHuEiiANLSqMsJCpaEGF
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+docker: Error response from daemon: platform linux/arm64/v8 not supported.
+time="2023-03-31T15:15:41+02:00" level=error msg="error waiting for container: context canceled"

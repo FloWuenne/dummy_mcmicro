@@ -1,0 +1,19 @@
+Unable to find image 'biocontainers/cellpose:2.1.1_cv1' locally
+f4bda05469a8: Download complete
+dfd8c3a080d6: Download complete
+bad0c0ea6165: Download complete
+a603fa5e3b41: Download complete
+0a112f1bbdd8: Download complete
+372d780866a7: Download complete
+4012abce08aa: Download complete
+b00aaacf759c: Download complete
+74be8ddfa7b5: Download complete
+75dc70b21417: Download complete
+2e0aab8a3f9f: Download complete
+6a0e4abca74a: Download complete
+feb836cf9ff2: Download complete
+d0819e2d86c5: Download complete
+7bef5b9ba650: Download complete
+376d1cd1a591: Download complete
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+docker: Error response from daemon: platform linux/arm64/v8 not supported.

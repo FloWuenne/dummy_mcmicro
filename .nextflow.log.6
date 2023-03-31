@@ -1,0 +1,64 @@
+Mar.-31 15:00:24.208 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -c ./nextflow.config -profile docker
+Mar.-31 15:00:24.235 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Mar.-31 15:00:24.251 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/florian_wuennemann/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Mar.-31 15:00:24.257 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-31 15:00:24.257 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-31 15:00:24.259 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-31 15:00:24.263 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-31 15:00:24.273 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:00:24.275 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/./nextflow.config
+Mar.-31 15:00:24.275 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:00:24.275 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:00:24.286 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:00:24.575 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:00:24.579 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [gitpod, debug, shifter, mamba, charliecloud, conda, singularity, arm, docker, podman]
+Mar.-31 15:00:24.582 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Mar.-31 15:00:24.593 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar.-31 15:00:24.602 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [happy_joliot] DSL2 - revision: 08a8f840c2
+Mar.-31 15:00:24.602 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-31 15:00:24.603 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-tower@1.5.6]
+Mar.-31 15:00:24.603 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.5.6
+Mar.-31 15:00:24.608 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.5.6' resolved
+Mar.-31 15:00:24.608 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.5.6'
+Mar.-31 15:00:24.615 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.5.6
+Mar.-31 15:00:24.622 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /Users/florian_wuennemann/.nextflow/secrets/store.json
+Mar.-31 15:00:24.624 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2a4f5433] - activable => nextflow.secret.LocalSecretsProvider@2a4f5433
+Mar.-31 15:00:24.653 [main] DEBUG nextflow.Session - Session UUID: 1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2
+Mar.-31 15:00:24.653 [main] DEBUG nextflow.Session - Run name: happy_joliot
+Mar.-31 15:00:24.654 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-31 15:00:24.659 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar.-31 15:00:24.678 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.7 build 5853
+  Created: 18-02-2023 20:32 UTC (21:32 CEST)
+  System: Mac OS X 13.1
+  Runtime: Groovy 3.0.13 on Java HotSpot(TM) 64-Bit Server VM 18.0.1.1+2-6
+  Encoding: UTF-8 (UTF-8)
+  Process: 35331@dhcp044b.laptop-nf325.uni-heidelberg.de [129.206.191.44]
+  CPUs: 8 - Mem: 32 GB (55.6 MB) - Swap: 0 (0)
+Mar.-31 15:00:24.687 [main] DEBUG nextflow.Session - Work-dir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work [Mac OS X]
+Mar.-31 15:00:24.688 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/bin
+Mar.-31 15:00:24.694 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-31 15:00:24.700 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-31 15:00:24.701 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar.-31 15:00:24.710 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar.-31 15:00:24.715 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-31 15:00:24.752 [main] DEBUG nextflow.Session - Session start
+Mar.-31 15:00:24.879 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar.-31 15:00:24.885 [main] DEBUG nextflow.Session - Session aborted -- Cause: Can't find a matching module file for include: ../modules/nf-core/backsub/main
+Mar.-31 15:00:24.891 [main] ERROR nextflow.cli.Launcher - Can't find a matching module file for include: ../modules/nf-core/backsub/main
+java.nio.file.NoSuchFileException: Can't find a matching module file for include: ../modules/nf-core/backsub/main
+	at nextflow.script.IncludeDef.realModulePath(IncludeDef.groovy:194)
+	at nextflow.script.IncludeDef.load0(IncludeDef.groovy:122)
+	at nextflow.script.IncludeDef$load0$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at Script_6d4a6d2e.runScript(Script_6d4a6d2e:1)
+	at nextflow.script.BaseScript.runDsl2(BaseScript.groovy:170)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:217)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:230)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:225)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:131)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:354)
+	at nextflow.cli.Launcher.run(Launcher.groovy:487)
+	at nextflow.cli.Launcher.main(Launcher.groovy:646)

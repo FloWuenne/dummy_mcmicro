@@ -1,0 +1,108 @@
+Mar.-31 15:16:29.516 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -c ./nextflow.config -profile docker
+Mar.-31 15:16:29.552 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Mar.-31 15:16:29.567 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/florian_wuennemann/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Mar.-31 15:16:29.573 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-31 15:16:29.574 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-31 15:16:29.575 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-31 15:16:29.580 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-31 15:16:29.589 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:16:29.590 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/./nextflow.config
+Mar.-31 15:16:29.590 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:16:29.590 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:16:29.601 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:16:29.884 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:16:29.890 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [gitpod, debug, shifter, mamba, charliecloud, conda, singularity, arm, docker, podman]
+Mar.-31 15:16:29.904 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar.-31 15:16:29.912 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [suspicious_bassi] DSL2 - revision: 3ab389ace1
+Mar.-31 15:16:29.913 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-31 15:16:29.913 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-tower@1.5.6]
+Mar.-31 15:16:29.913 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.5.6
+Mar.-31 15:16:29.918 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.5.6' resolved
+Mar.-31 15:16:29.918 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.5.6'
+Mar.-31 15:16:29.924 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.5.6
+Mar.-31 15:16:29.930 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /Users/florian_wuennemann/.nextflow/secrets/store.json
+Mar.-31 15:16:29.932 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4acc5dff] - activable => nextflow.secret.LocalSecretsProvider@4acc5dff
+Mar.-31 15:16:29.959 [main] DEBUG nextflow.Session - Session UUID: 1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2
+Mar.-31 15:16:29.959 [main] DEBUG nextflow.Session - Run name: suspicious_bassi
+Mar.-31 15:16:29.959 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-31 15:16:29.965 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar.-31 15:16:29.981 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.7 build 5853
+  Created: 18-02-2023 20:32 UTC (21:32 CEST)
+  System: Mac OS X 13.1
+  Runtime: Groovy 3.0.13 on Java HotSpot(TM) 64-Bit Server VM 18.0.1.1+2-6
+  Encoding: UTF-8 (UTF-8)
+  Process: 37715@dhcp044b.laptop-nf325.uni-heidelberg.de [129.206.191.44]
+  CPUs: 8 - Mem: 32 GB (444.2 MB) - Swap: 0 (0)
+Mar.-31 15:16:29.991 [main] DEBUG nextflow.Session - Work-dir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work [Mac OS X]
+Mar.-31 15:16:29.991 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/bin
+Mar.-31 15:16:29.996 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-31 15:16:30.001 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-31 15:16:30.003 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar.-31 15:16:30.012 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar.-31 15:16:30.016 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-31 15:16:30.053 [main] DEBUG nextflow.Session - Session start
+Mar.-31 15:16:30.158 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar.-31 15:16:30.463 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-31 15:16:30.463 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-31 15:16:30.466 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar.-31 15:16:30.469 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=32 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar.-31 15:16:30.517 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CELLPOSE` matches process CELLPOSE
+Mar.-31 15:16:30.518 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-31 15:16:30.518 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-31 15:16:30.520 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-31 15:16:30.520 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-31 15:16:30.523 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SCIMAP_MCMICRO` matches process SCIMAP_MCMICRO
+Mar.-31 15:16:30.523 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-31 15:16:30.523 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-31 15:16:30.524 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BACKSUB, SCIMAP_MCMICRO, CELLPOSE, DEEPCELL_MESMER, MCQUANT
+Mar.-31 15:16:30.525 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Mar.-31 15:16:30.525 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BACKSUB
+Mar.-31 15:16:30.526 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CELLPOSE
+Mar.-31 15:16:30.526 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MCQUANT
+Mar.-31 15:16:30.526 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCIMAP_MCMICRO
+Mar.-31 15:16:30.526 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar.-31 15:16:30.526 [main] DEBUG nextflow.Session - Session await
+Mar.-31 15:16:30.606 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-31 15:16:30.607 [Task submitter] INFO  nextflow.Session - [89/7a9493] Submitted process > BACKSUB (image)
+Mar.-31 15:16:35.537 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: BACKSUB (image); status: COMPLETED; exit: 0; error: -; workDir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work/89/7a9493e627cf5579934ea2cd3153ab]
+Mar.-31 15:16:35.554 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-31 15:16:35.555 [Task submitter] INFO  nextflow.Session - [fb/52daef] Submitted process > CELLPOSE (image)
+Mar.-31 15:16:35.840 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: CELLPOSE (image); status: COMPLETED; exit: 125; error: -; workDir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work/fb/52daefb4951bad80b59f790b19f26f]
+Mar.-31 15:16:35.846 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'CELLPOSE (image)'
+
+Caused by:
+  Process `CELLPOSE (image)` terminated with an error exit status (125)
+
+Command executed:
+
+  cellpose     --image_path image.backsub.ome.tif     --save_tif     --verbose     --pretrained_model nuclei --diameter 9 --channel_axis 0 --no_npy
+  
+  cat <<-END_VERSIONS > versions.yml
+  "CELLPOSE":
+      cellpose: 2.1.1
+  END_VERSIONS
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+  docker: Error response from daemon: platform linux/arm64/v8 not supported.
+  time="2023-03-31T15:16:35+02:00" level=error msg="error waiting for container: context canceled"
+
+Work dir:
+  /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work/fb/52daefb4951bad80b59f790b19f26f
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Mar.-31 15:16:35.849 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `CELLPOSE (image)` terminated with an error exit status (125)
+Mar.-31 15:16:35.850 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar.-31 15:16:35.856 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar.-31 15:16:35.859 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=4.9s; failedDuration=202ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar.-31 15:16:36.063 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar.-31 15:16:36.064 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-tower@1.5.6'
+Mar.-31 15:16:36.064 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-tower
+Mar.-31 15:16:36.074 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

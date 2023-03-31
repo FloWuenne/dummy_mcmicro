@@ -1,0 +1,87 @@
+Mar.-31 15:14:19.381 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -c ./nextflow.config -profile docker
+Mar.-31 15:14:19.416 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Mar.-31 15:14:19.431 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/florian_wuennemann/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Mar.-31 15:14:19.436 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-31 15:14:19.437 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-31 15:14:19.439 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-31 15:14:19.445 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-31 15:14:19.453 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:14:19.455 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/./nextflow.config
+Mar.-31 15:14:19.455 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:14:19.455 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:14:19.466 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:14:19.748 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:14:19.752 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [gitpod, debug, shifter, mamba, charliecloud, conda, singularity, arm, docker, podman]
+Mar.-31 15:14:19.765 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar.-31 15:14:19.775 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [awesome_pauling] DSL2 - revision: c1068e156f
+Mar.-31 15:14:19.776 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-31 15:14:19.776 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-tower@1.5.6]
+Mar.-31 15:14:19.776 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.5.6
+Mar.-31 15:14:19.782 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.5.6' resolved
+Mar.-31 15:14:19.782 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.5.6'
+Mar.-31 15:14:19.789 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.5.6
+Mar.-31 15:14:19.796 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /Users/florian_wuennemann/.nextflow/secrets/store.json
+Mar.-31 15:14:19.798 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@aaa0f76] - activable => nextflow.secret.LocalSecretsProvider@aaa0f76
+Mar.-31 15:14:19.827 [main] DEBUG nextflow.Session - Session UUID: 1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2
+Mar.-31 15:14:19.827 [main] DEBUG nextflow.Session - Run name: awesome_pauling
+Mar.-31 15:14:19.827 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-31 15:14:19.833 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar.-31 15:14:19.854 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.7 build 5853
+  Created: 18-02-2023 20:32 UTC (21:32 CEST)
+  System: Mac OS X 13.1
+  Runtime: Groovy 3.0.13 on Java HotSpot(TM) 64-Bit Server VM 18.0.1.1+2-6
+  Encoding: UTF-8 (UTF-8)
+  Process: 37109@dhcp044b.laptop-nf325.uni-heidelberg.de [129.206.191.44]
+  CPUs: 8 - Mem: 32 GB (49.1 MB) - Swap: 0 (0)
+Mar.-31 15:14:19.863 [main] DEBUG nextflow.Session - Work-dir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work [Mac OS X]
+Mar.-31 15:14:19.863 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/bin
+Mar.-31 15:14:19.870 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-31 15:14:19.875 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-31 15:14:19.877 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar.-31 15:14:19.885 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar.-31 15:14:19.890 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-31 15:14:19.925 [main] DEBUG nextflow.Session - Session start
+Mar.-31 15:14:20.015 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar.-31 15:14:20.329 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-31 15:14:20.330 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-31 15:14:20.332 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar.-31 15:14:20.335 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=32 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar.-31 15:14:20.379 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CELLPOSE` matches process CELLPOSE
+Mar.-31 15:14:20.380 [main] DEBUG nextflow.Session - Session aborted -- Cause: Process `CELLPOSE` declares 1 input channel but 2 were specified
+Mar.-31 15:14:20.390 [main] ERROR nextflow.cli.Launcher - Process `CELLPOSE` declares 1 input channel but 2 were specified
+nextflow.exception.ScriptRuntimeException: Process `CELLPOSE` declares 1 input channel but 2 were specified
+	at nextflow.script.ProcessDef.run(ProcessDef.groovy:175)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:41)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:94)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:350)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at Script_bb21b6c8$_runScript_closure1$_closure2.doCall(Script_bb21b6c8:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.IterableDef$invoke_a.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.script.BaseScript.runDsl2(BaseScript.groovy:208)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:217)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:230)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:225)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:131)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:354)
+	at nextflow.cli.Launcher.run(Launcher.groovy:487)
+	at nextflow.cli.Launcher.main(Launcher.groovy:646)
