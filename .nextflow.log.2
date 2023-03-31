@@ -1,164 +1,52 @@
-Mar.-31 15:15:34.542 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -c ./nextflow.config -profile docker
-Mar.-31 15:15:34.580 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
-Mar.-31 15:15:34.594 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/florian_wuennemann/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
-Mar.-31 15:15:34.599 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Mar.-31 15:15:34.599 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Mar.-31 15:15:34.601 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Mar.-31 15:15:34.608 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Mar.-31 15:15:34.617 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
-Mar.-31 15:15:34.618 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/./nextflow.config
-Mar.-31 15:15:34.618 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
-Mar.-31 15:15:34.618 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
-Mar.-31 15:15:34.629 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
-Mar.-31 15:15:34.926 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
-Mar.-31 15:15:34.931 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [gitpod, debug, shifter, mamba, charliecloud, conda, singularity, arm, docker, podman]
-Mar.-31 15:15:34.945 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Mar.-31 15:15:34.955 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [furious_jones] DSL2 - revision: 3d8b3fbaf8
-Mar.-31 15:15:34.956 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Mar.-31 15:15:34.956 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-tower@1.5.6]
-Mar.-31 15:15:34.956 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.5.6
-Mar.-31 15:15:34.962 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.5.6' resolved
-Mar.-31 15:15:34.962 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.5.6'
-Mar.-31 15:15:34.969 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.5.6
-Mar.-31 15:15:34.976 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /Users/florian_wuennemann/.nextflow/secrets/store.json
-Mar.-31 15:15:34.979 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7a8b9166] - activable => nextflow.secret.LocalSecretsProvider@7a8b9166
-Mar.-31 15:15:35.011 [main] DEBUG nextflow.Session - Session UUID: 1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2
-Mar.-31 15:15:35.011 [main] DEBUG nextflow.Session - Run name: furious_jones
-Mar.-31 15:15:35.011 [main] DEBUG nextflow.Session - Executor pool size: 8
-Mar.-31 15:15:35.017 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Mar.-31 15:15:35.035 [main] DEBUG nextflow.cli.CmdRun - 
+Mar.-31 15:16:18.099 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -c ./nextflow.config -profile docker
+Mar.-31 15:16:18.134 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Mar.-31 15:16:18.147 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/florian_wuennemann/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Mar.-31 15:16:18.153 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-31 15:16:18.153 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-31 15:16:18.155 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-31 15:16:18.161 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-31 15:16:18.170 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:16:18.171 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/./nextflow.config
+Mar.-31 15:16:18.172 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:16:18.172 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/nextflow.config
+Mar.-31 15:16:18.184 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:16:18.471 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar.-31 15:16:18.475 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [gitpod, debug, shifter, mamba, charliecloud, conda, singularity, arm, docker, podman]
+Mar.-31 15:16:18.489 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar.-31 15:16:18.498 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [curious_lattes] DSL2 - revision: bb29d696c2
+Mar.-31 15:16:18.498 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-31 15:16:18.498 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-tower@1.5.6]
+Mar.-31 15:16:18.499 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.5.6
+Mar.-31 15:16:18.504 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.5.6' resolved
+Mar.-31 15:16:18.504 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.5.6'
+Mar.-31 15:16:18.509 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.5.6
+Mar.-31 15:16:18.515 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /Users/florian_wuennemann/.nextflow/secrets/store.json
+Mar.-31 15:16:18.517 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4acc5dff] - activable => nextflow.secret.LocalSecretsProvider@4acc5dff
+Mar.-31 15:16:18.546 [main] DEBUG nextflow.Session - Session UUID: 1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2
+Mar.-31 15:16:18.546 [main] DEBUG nextflow.Session - Run name: curious_lattes
+Mar.-31 15:16:18.546 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-31 15:16:18.551 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar.-31 15:16:18.564 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 22.10.7 build 5853
   Created: 18-02-2023 20:32 UTC (21:32 CEST)
   System: Mac OS X 13.1
   Runtime: Groovy 3.0.13 on Java HotSpot(TM) 64-Bit Server VM 18.0.1.1+2-6
   Encoding: UTF-8 (UTF-8)
-  Process: 37430@dhcp044b.laptop-nf325.uni-heidelberg.de [129.206.191.44]
-  CPUs: 8 - Mem: 32 GB (1.1 GB) - Swap: 0 (0)
-Mar.-31 15:15:35.044 [main] DEBUG nextflow.Session - Work-dir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work [Mac OS X]
-Mar.-31 15:15:35.044 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/bin
-Mar.-31 15:15:35.052 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Mar.-31 15:15:35.058 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar.-31 15:15:35.059 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Mar.-31 15:15:35.069 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Mar.-31 15:15:35.075 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-Mar.-31 15:15:35.137 [main] DEBUG nextflow.Session - Session start
-Mar.-31 15:15:35.237 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar.-31 15:15:35.536 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar.-31 15:15:35.536 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar.-31 15:15:35.539 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar.-31 15:15:35.542 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=32 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Mar.-31 15:15:35.586 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CELLPOSE` matches process CELLPOSE
-Mar.-31 15:15:35.587 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar.-31 15:15:35.587 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar.-31 15:15:35.592 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar.-31 15:15:35.592 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar.-31 15:15:35.595 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SCIMAP_MCMICRO` matches process SCIMAP_MCMICRO
-Mar.-31 15:15:35.596 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar.-31 15:15:35.596 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar.-31 15:15:35.597 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BACKSUB, SCIMAP_MCMICRO, CELLPOSE, DEEPCELL_MESMER, MCQUANT
-Mar.-31 15:15:35.598 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
-Mar.-31 15:15:35.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BACKSUB
-Mar.-31 15:15:35.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CELLPOSE
-Mar.-31 15:15:35.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MCQUANT
-Mar.-31 15:15:35.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCIMAP_MCMICRO
-Mar.-31 15:15:35.599 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Mar.-31 15:15:35.599 [main] DEBUG nextflow.Session - Session await
-Mar.-31 15:15:35.680 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar.-31 15:15:35.681 [Task submitter] INFO  nextflow.Session - [89/7a9493] Submitted process > BACKSUB (image)
-Mar.-31 15:15:40.854 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: BACKSUB (image); status: COMPLETED; exit: 0; error: -; workDir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work/89/7a9493e627cf5579934ea2cd3153ab]
-Mar.-31 15:15:40.872 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar.-31 15:15:40.872 [Task submitter] INFO  nextflow.Session - [f6/b1c976] Submitted process > CELLPOSE (image)
-Mar.-31 15:15:40.877 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'BACKSUB (image)'
+  Process: 37655@dhcp044b.laptop-nf325.uni-heidelberg.de [129.206.191.44]
+  CPUs: 8 - Mem: 32 GB (603.2 MB) - Swap: 0 (0)
+Mar.-31 15:16:18.574 [main] DEBUG nextflow.Session - Work-dir: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work [Mac OS X]
+Mar.-31 15:16:18.574 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/bin
+Mar.-31 15:16:18.580 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-31 15:16:18.585 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-31 15:16:18.587 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar.-31 15:16:18.596 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar.-31 15:16:18.600 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-31 15:16:18.651 [main] DEBUG nextflow.Session - Session start
+Mar.-31 15:16:18.716 [main] ERROR nextflow.cli.Launcher - Script compilation error
+- file : /Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/main.nf
+- cause: Unexpected input: '{' @ line 7, column 9.
+   workflow{
+           ^
 
-Caused by:
-  No such variable: Exception evaluating property 'markerfile' for java.util.ArrayList, Reason: groovy.lang.MissingPropertyException: No such property: markerfile for class: sun.nio.fs.UnixPath
+1 error
 
-groovy.lang.MissingPropertyException: Exception evaluating property 'markerfile' for java.util.ArrayList, Reason: groovy.lang.MissingPropertyException: No such property: markerfile for class: sun.nio.fs.UnixPath
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAtIterable(DefaultGroovyMethods.java:8762)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAt(DefaultGroovyMethods.java:8750)
-	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1941)
-	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3843)
-	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:199)
-	at groovyx.gpars.dataflow.expression.DataflowGetPropertyExpression.evaluate(DataflowGetPropertyExpression.java:49)
-	at groovyx.gpars.dataflow.expression.DataflowExpression$DataflowExpressionsCollector.send(DataflowExpression.java:1250)
-	at groovyx.gpars.dataflow.expression.DataflowExpression.scheduleCallback(DataflowExpression.java:479)
-	at groovyx.gpars.dataflow.expression.DataflowExpression.doBindImpl(DataflowExpression.java:417)
-	at groovyx.gpars.dataflow.expression.DataflowExpression.doBind(DataflowExpression.java:395)
-	at groovyx.gpars.dataflow.expression.DataflowExpression.bind(DataflowExpression.java:371)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at groovy.runtime.metaclass.NextflowDelegatingMetaClass.invokeMethod(NextflowDelegatingMetaClass.java:65)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:38)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at nextflow.processor.TaskProcessor.bindOutParam(TaskProcessor.groovy:1395)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
-	at nextflow.processor.TaskProcessor.bindOutputs(TaskProcessor.groovy:1366)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at nextflow.processor.TaskProcessor.finalizeTask0(TaskProcessor.groovy:2218)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at nextflow.processor.TaskProcessor.finalizeTask(TaskProcessor.groovy:2190)
-	at nextflow.processor.TaskPollingMonitor.checkTaskStatus(TaskPollingMonitor.groovy:619)
-	at nextflow.processor.TaskPollingMonitor.checkAllTasks(TaskPollingMonitor.groovy:534)
-	at nextflow.processor.TaskPollingMonitor.pollLoop(TaskPollingMonitor.groovy:409)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1029)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1012)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:101)
-	at nextflow.processor.TaskPollingMonitor$_start_closure2.doCall(TaskPollingMonitor.groovy:293)
-	at nextflow.processor.TaskPollingMonitor$_start_closure2.call(TaskPollingMonitor.groovy)
-	at groovy.lang.Closure.run(Closure.java:493)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Mar.-31 15:15:40.880 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Exception evaluating property 'markerfile' for java.util.ArrayList, Reason: groovy.lang.MissingPropertyException: No such property: markerfile for class: sun.nio.fs.UnixPath
-Mar.-31 15:15:40.889 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
-[process] MCQUANT
-  status=ACTIVE
-  port 0: (value) bound ; channel: -
-  port 1: (value) OPEN  ; channel: -
-  port 2: (value) bound ; channel: -
-  port 3: (cntrl) -     ; channel: $
-
-[process] SCIMAP_MCMICRO
-  status=ACTIVE
-  port 0: (value) OPEN  ; channel: -
-  port 1: (cntrl) -     ; channel: $
-
-Mar.-31 15:15:40.898 [main] DEBUG nextflow.Session - Session await > all processes finished
-Mar.-31 15:15:40.898 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Mar.-31 15:15:40.902 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
-Mar.-31 15:15:40.909 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=1; runningCount=1; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=1; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-Mar.-31 15:15:41.101 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Mar.-31 15:15:41.101 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-tower@1.5.6'
-Mar.-31 15:15:41.101 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-tower
-Mar.-31 15:15:41.108 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

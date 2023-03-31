@@ -1,9 +1,0 @@
-Attempted file (/Users/florian_wuennemann/1_Projects/nf_core/dummy_mcmicro/work/89/7a9493e627cf5579934ea2cd3153ab/cycif_tonsil_registered.ome.tif) load with reader: aicsimageio.readers.bfio_reader.OmeTiledTiffReader failed with error: No module named 'bfio'
-/opt/conda/lib/python3.9/site-packages/ome_types/_convenience.py:106: FutureWarning: The default XML parser will be changing from 'xmlschema' to 'lxml' in version 0.4.0.  To silence this warning, please provide the `parser` argument, specifying either 'lxml' (to opt into the new behavior), or'xmlschema' (to retain the old behavior).
-  d = to_dict(os.fspath(xml), parser=parser, validate=validate)
-/opt/conda/lib/python3.9/site-packages/dask/array/utils.py:82: FutureWarning: The behavior of `series[i:j]` with an integer-dtype index is deprecated. In a future version, this will be treated as *label-based* indexing, consistent with e.g. `series[i]` lookups. To retain the old behavior, use `series.iloc[i:j]`. To get the future behavior, use `series.loc[i:j]`.
-  meta = x[tuple(slice(0, 0, None) for _ in range(x.ndim))]
-/opt/conda/lib/python3.9/site-packages/dask/array/utils.py:82: FutureWarning: The behavior of `series[i:j]` with an integer-dtype index is deprecated. In a future version, this will be treated as *label-based* indexing, consistent with e.g. `series[i]` lookups. To retain the old behavior, use `series.iloc[i:j]`. To get the future behavior, use `series.loc[i:j]`.
-  meta = x[tuple(slice(0, 0, None) for _ in range(x.ndim))]
-/opt/conda/lib/python3.9/site-packages/dask/array/utils.py:82: FutureWarning: The behavior of `series[i:j]` with an integer-dtype index is deprecated. In a future version, this will be treated as *label-based* indexing, consistent with e.g. `series[i]` lookups. To retain the old behavior, use `series.iloc[i:j]`. To get the future behavior, use `series.loc[i:j]`.
-  meta = x[tuple(slice(0, 0, None) for _ in range(x.ndim))]
