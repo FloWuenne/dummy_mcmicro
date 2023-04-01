@@ -6,3 +6,6 @@
 2023-03-31 15:16:18	-	curious_lattes	-	bb29d696c27d1dadf08a5ca2b956215d	1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2	nextflow run main.nf -resume -c ./nextflow.config -profile docker
 2023-03-31 15:16:29	7.1s	suspicious_bassi	ERR	3ab389ace1a73574cdfb17d8026b8b0a	1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2	nextflow run main.nf -resume -c ./nextflow.config -profile docker
 2023-03-31 15:19:30	1.4s	focused_church	ERR	3ab389ace1a73574cdfb17d8026b8b0a	1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2	nextflow run main.nf -resume -c ./nextflow.config -profile docker
+2023-03-31 15:20:47	7s	furious_ardinghelli	ERR	3ab389ace1a73574cdfb17d8026b8b0a	1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2	nextflow run main.nf -resume -c ./nextflow.config -profile docker
+2023-03-31 15:24:57	3m 12s	modest_lichterman	ERR	3ab389ace1a73574cdfb17d8026b8b0a	1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2	nextflow run main.nf -resume -c ./nextflow.config -profile docker
+2023-03-31 15:28:37	1m 56s	drunk_engelbart	OK	3ab389ace1a73574cdfb17d8026b8b0a	1abe7ea7-aa6f-4da4-8898-3831dfeb3dd2	nextflow run main.nf -resume -c ./nextflow.config -profile docker
